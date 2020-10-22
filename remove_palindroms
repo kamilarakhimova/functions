@@ -1,4 +1,4 @@
-def remove_palindroms(spells): 
+def remove_palindroms(spells):
     k = 0
     for i in range(len(spells)):
         if ' ' in spells[k]:
@@ -11,3 +11,4 @@ def remove_palindroms(spells):
             k -= 1
         k += 1
     return spells
+    
