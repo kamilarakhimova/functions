@@ -11,4 +11,3 @@ def remove_palindroms(spells):
             k -= 1
         k += 1
     return spells
-    
