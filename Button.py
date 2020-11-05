@@ -1,10 +1,12 @@
 class Button:
     def __init__(self):
-        self.clicks = 0
+        self.click = 0
+
     def click(self):
-        self.clicks += 1
+        self.click += 1
+
     def click_count(self):
-        return self.clicks
+        return self.click
+
     def reset(self):
-        self.clicks = 0
- 
+        self.click = 0
