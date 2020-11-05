@@ -7,3 +7,4 @@ class Button:
         return self.clicks
     def reset(self):
         self.clicks = 0
+ 
