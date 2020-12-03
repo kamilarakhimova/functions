@@ -16,7 +16,7 @@ def wave(x, y, d, dd, step, b):
 
 
 class LabirintTurtle:
-    def __init__(self):
+    def __init__(self, *args):
         self.a = []
         self.b = []
         self.d = 0
@@ -34,7 +34,7 @@ class LabirintTurtle:
         self.k1 = 0
         self.napr = 'sever'
 
-    def load_map(self, file):
+    def load_map(self, file, *args):
         try:
             self.file = open(file, 'r')
         except FileNotFoundError:
@@ -176,7 +176,7 @@ class LabirintTurtle:
                             self.k1 += 1
         self.file.close()
 
-    def show_map(self, turtle=False, aa='kamiladura'):
+    def show_map(self, turtle=False, aa='kamiladura', *args):
         try:
             if turtle == 1:
                 self.a[self.x][self.y] = '🐢'
@@ -191,7 +191,7 @@ class LabirintTurtle:
                 print("\033[33m {}".format(j), end='\t')
             print('')
 
-    def check_map(self, aa='kamiladura'):
+    def check_map(self, aa='kamiladura', *args):
         if aa != 'kamiladura':
             print('Некорректный ввод. Функция check_map не принимает аргументы.')
             raise SystemExit
@@ -201,10 +201,10 @@ class LabirintTurtle:
         else:
             print("\033[34m {}".format('Всё хорошо'))
 
-    def exit_count_step(self):
+    def exit_count_step(self, *args):
         print("\033[34m {}".format(self.steps))
 
-    def exit_show_step(self):
+    def exit_show_step(self, *args):
         if self.bb != 0:
             if self.k == 1:
                 self.a[self.xv][self.yv] = '🐢'
