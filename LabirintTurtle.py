@@ -176,7 +176,7 @@ class LabirintTurtle:
                             self.k1 += 1
         self.file.close()
 
-    def show_map(self, aa='kamiladura', turtle=False):
+    def show_map(self, turtle=False, aa='kamiladura'):
         try:
             if turtle == 1:
                 self.a[self.x][self.y] = '🐢'
